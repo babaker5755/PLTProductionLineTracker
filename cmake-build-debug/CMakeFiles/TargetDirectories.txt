@@ -1,0 +1,3 @@
+/Users/brandonbaker/OneDrive - Florida Gulf Coast University/CLionProjects/HelloWorld/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/brandonbaker/OneDrive - Florida Gulf Coast University/CLionProjects/HelloWorld/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/brandonbaker/OneDrive - Florida Gulf Coast University/CLionProjects/HelloWorld/cmake-build-debug/CMakeFiles/HelloWorld.dir
