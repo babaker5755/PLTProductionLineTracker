@@ -6,7 +6,21 @@
 
 #IncludeRegexTransform: 
 
-/Users/brandonbaker/OneDrive - Florida Gulf Coast University/CLionProjects/HelloWorld/main.cpp
+/Users/brandonbaker/OneDrive - Florida Gulf Coast University/CLionProjects/HelloWorld/main.h
+
+/Users/brandonbaker/OneDrive - Florida Gulf Coast University/CLionProjects/HelloWorld/musicPlayer.cpp
+main.h
+/Users/brandonbaker/OneDrive - Florida Gulf Coast University/CLionProjects/HelloWorld/main.h
+musicPlayer.h
+/Users/brandonbaker/OneDrive - Florida Gulf Coast University/CLionProjects/HelloWorld/musicPlayer.h
+fstream
+-
+iostream
+-
+iomanip
+-
+
+/Users/brandonbaker/OneDrive - Florida Gulf Coast University/CLionProjects/HelloWorld/musicPlayer.h
 iostream
 -
 

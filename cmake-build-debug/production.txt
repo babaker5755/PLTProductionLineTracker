@@ -1,0 +1,4 @@
+Production Number : 0 Serial Number : aaAM00000
+Production Number : 1 Serial Number : aaAM00001
+Production Number : 2 Serial Number : aaAM00002
+Production Number : 3 Serial Number : apVM00000

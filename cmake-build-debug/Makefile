@@ -150,6 +150,60 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/HelloWorld.dir/build.make CMakeFiles/HelloWorld.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+musicPlayer.o: musicPlayer.cpp.o
+
+.PHONY : musicPlayer.o
+
+# target to build an object file
+musicPlayer.cpp.o:
+	$(MAKE) -f CMakeFiles/HelloWorld.dir/build.make CMakeFiles/HelloWorld.dir/musicPlayer.cpp.o
+.PHONY : musicPlayer.cpp.o
+
+musicPlayer.i: musicPlayer.cpp.i
+
+.PHONY : musicPlayer.i
+
+# target to preprocess a source file
+musicPlayer.cpp.i:
+	$(MAKE) -f CMakeFiles/HelloWorld.dir/build.make CMakeFiles/HelloWorld.dir/musicPlayer.cpp.i
+.PHONY : musicPlayer.cpp.i
+
+musicPlayer.s: musicPlayer.cpp.s
+
+.PHONY : musicPlayer.s
+
+# target to generate assembly for a file
+musicPlayer.cpp.s:
+	$(MAKE) -f CMakeFiles/HelloWorld.dir/build.make CMakeFiles/HelloWorld.dir/musicPlayer.cpp.s
+.PHONY : musicPlayer.cpp.s
+
+product.o: product.cpp.o
+
+.PHONY : product.o
+
+# target to build an object file
+product.cpp.o:
+	$(MAKE) -f CMakeFiles/HelloWorld.dir/build.make CMakeFiles/HelloWorld.dir/product.cpp.o
+.PHONY : product.cpp.o
+
+product.i: product.cpp.i
+
+.PHONY : product.i
+
+# target to preprocess a source file
+product.cpp.i:
+	$(MAKE) -f CMakeFiles/HelloWorld.dir/build.make CMakeFiles/HelloWorld.dir/product.cpp.i
+.PHONY : product.cpp.i
+
+product.s: product.cpp.s
+
+.PHONY : product.s
+
+# target to generate assembly for a file
+product.cpp.s:
+	$(MAKE) -f CMakeFiles/HelloWorld.dir/build.make CMakeFiles/HelloWorld.dir/product.cpp.s
+.PHONY : product.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -162,6 +216,12 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... musicPlayer.o"
+	@echo "... musicPlayer.i"
+	@echo "... musicPlayer.s"
+	@echo "... product.o"
+	@echo "... product.i"
+	@echo "... product.s"
 .PHONY : help
 
 

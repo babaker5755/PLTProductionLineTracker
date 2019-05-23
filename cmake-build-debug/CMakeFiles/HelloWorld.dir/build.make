@@ -70,17 +70,47 @@ CMakeFiles/HelloWorld.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/HelloWorld.dir/main.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/brandonbaker/OneDrive - Florida Gulf Coast University/CLionProjects/HelloWorld/main.cpp" -o CMakeFiles/HelloWorld.dir/main.cpp.s
 
+CMakeFiles/HelloWorld.dir/musicPlayer.cpp.o: CMakeFiles/HelloWorld.dir/flags.make
+CMakeFiles/HelloWorld.dir/musicPlayer.cpp.o: ../musicPlayer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/brandonbaker/OneDrive - Florida Gulf Coast University/CLionProjects/HelloWorld/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/HelloWorld.dir/musicPlayer.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HelloWorld.dir/musicPlayer.cpp.o -c "/Users/brandonbaker/OneDrive - Florida Gulf Coast University/CLionProjects/HelloWorld/musicPlayer.cpp"
+
+CMakeFiles/HelloWorld.dir/musicPlayer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/HelloWorld.dir/musicPlayer.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/brandonbaker/OneDrive - Florida Gulf Coast University/CLionProjects/HelloWorld/musicPlayer.cpp" > CMakeFiles/HelloWorld.dir/musicPlayer.cpp.i
+
+CMakeFiles/HelloWorld.dir/musicPlayer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/HelloWorld.dir/musicPlayer.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/brandonbaker/OneDrive - Florida Gulf Coast University/CLionProjects/HelloWorld/musicPlayer.cpp" -o CMakeFiles/HelloWorld.dir/musicPlayer.cpp.s
+
+CMakeFiles/HelloWorld.dir/product.cpp.o: CMakeFiles/HelloWorld.dir/flags.make
+CMakeFiles/HelloWorld.dir/product.cpp.o: ../product.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/brandonbaker/OneDrive - Florida Gulf Coast University/CLionProjects/HelloWorld/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/HelloWorld.dir/product.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HelloWorld.dir/product.cpp.o -c "/Users/brandonbaker/OneDrive - Florida Gulf Coast University/CLionProjects/HelloWorld/product.cpp"
+
+CMakeFiles/HelloWorld.dir/product.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/HelloWorld.dir/product.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/brandonbaker/OneDrive - Florida Gulf Coast University/CLionProjects/HelloWorld/product.cpp" > CMakeFiles/HelloWorld.dir/product.cpp.i
+
+CMakeFiles/HelloWorld.dir/product.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/HelloWorld.dir/product.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/brandonbaker/OneDrive - Florida Gulf Coast University/CLionProjects/HelloWorld/product.cpp" -o CMakeFiles/HelloWorld.dir/product.cpp.s
+
 # Object files for target HelloWorld
 HelloWorld_OBJECTS = \
-"CMakeFiles/HelloWorld.dir/main.cpp.o"
+"CMakeFiles/HelloWorld.dir/main.cpp.o" \
+"CMakeFiles/HelloWorld.dir/musicPlayer.cpp.o" \
+"CMakeFiles/HelloWorld.dir/product.cpp.o"
 
 # External object files for target HelloWorld
 HelloWorld_EXTERNAL_OBJECTS =
 
 HelloWorld: CMakeFiles/HelloWorld.dir/main.cpp.o
+HelloWorld: CMakeFiles/HelloWorld.dir/musicPlayer.cpp.o
+HelloWorld: CMakeFiles/HelloWorld.dir/product.cpp.o
 HelloWorld: CMakeFiles/HelloWorld.dir/build.make
 HelloWorld: CMakeFiles/HelloWorld.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/brandonbaker/OneDrive - Florida Gulf Coast University/CLionProjects/HelloWorld/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable HelloWorld"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/brandonbaker/OneDrive - Florida Gulf Coast University/CLionProjects/HelloWorld/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable HelloWorld"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/HelloWorld.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
