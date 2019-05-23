@@ -12,26 +12,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ca89372f-975e-4f86-bd4f-8dbff2f2335e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/main.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/musicPlayer.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/musicPlayer.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/moviePlayer.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/moviePlayer.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/HelloWorld.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/HelloWorld.dir/CXX.includecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/HelloWorld.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/HelloWorld.dir/DependInfo.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/HelloWorld.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/HelloWorld.dir/build.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/HelloWorld.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/HelloWorld.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/HelloWorld.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/HelloWorld.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/HelloWorld.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/HelloWorld.dir/depend.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/HelloWorld.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/HelloWorld.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/HelloWorld.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/HelloWorld.dir/main.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/HelloWorld.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/HelloWorld.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/HelloWorld" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/HelloWorld" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/HelloWorld.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/HelloWorld.cbp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
@@ -52,8 +43,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="901">
-              <caret line="78" column="2" lean-forward="true" selection-start-line="78" selection-start-column="2" selection-end-line="78" selection-end-column="2" />
+            <state relative-caret-position="361">
+              <caret line="194" selection-start-line="194" selection-end-line="194" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -62,10 +53,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cmake-build-debug/production.txt">
+        <entry file="file://$PROJECT_DIR$/musicPlayer.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+            <state relative-caret-position="-720">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+              <folding>
+                <element signature="e#51#68#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/musicPlayer.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -88,10 +91,12 @@
         <option value="$PROJECT_DIR$/product.h" />
         <option value="$PROJECT_DIR$/musicPlayer.h" />
         <option value="$PROJECT_DIR$/main.h" />
-        <option value="$PROJECT_DIR$/main.cpp" />
         <option value="$PROJECT_DIR$/cmake-build-debug/production.txt" />
         <option value="$PROJECT_DIR$/cmake-build-debug/placeholder.txt" />
         <option value="$PROJECT_DIR$/musicPlayer.cpp" />
+        <option value="$PROJECT_DIR$/moviePlayer.cpp" />
+        <option value="$PROJECT_DIR$/moviePlayer.h" />
+        <option value="$PROJECT_DIR$/main.cpp" />
       </list>
     </option>
   </component>
@@ -173,12 +178,12 @@
       <workItem from="1558385566428" duration="573000" />
       <workItem from="1558533557224" duration="7246000" />
       <workItem from="1558625736919" duration="5188000" />
-      <workItem from="1558631113870" duration="732000" />
+      <workItem from="1558631113870" duration="962000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23037000" />
+    <option name="totallyTimeSpent" value="23267000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1440" y="23" width="1908" height="1052" extended-state="0" />
@@ -254,25 +259,8 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/product.h" />
-    <entry file="file://$PROJECT_DIR$/musicPlayer.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="17" lean-forward="true" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cmake-build-debug/placeholder.txt">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/musicPlayer.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="52" lean-forward="true" selection-start-line="18" selection-start-column="52" selection-end-line="18" selection-end-column="52" />
-          <folding>
-            <element signature="e#51#68#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.h">
       <provider selected="true" editor-type-id="text-editor">
@@ -281,17 +269,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/musicPlayer.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/cmake-build-debug/production.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/moviePlayer.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/moviePlayer.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" selection-start-line="9" selection-end-line="9" selection-end-column="21" />
+          <folding>
+            <element signature="e#50#67#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/musicPlayer.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-720">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="e#51#68#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="901">
-          <caret line="78" column="2" lean-forward="true" selection-start-line="78" selection-start-column="2" selection-end-line="78" selection-end-column="2" />
+        <state relative-caret-position="361">
+          <caret line="194" selection-start-line="194" selection-end-line="194" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>

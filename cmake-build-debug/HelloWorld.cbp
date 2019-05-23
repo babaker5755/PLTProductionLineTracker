@@ -86,6 +86,12 @@
 		<Unit filename="/Users/brandonbaker/OneDrive - Florida Gulf Coast University/CLionProjects/HelloWorld/main.h">
 			<Option target="HelloWorld"/>
 		</Unit>
+		<Unit filename="/Users/brandonbaker/OneDrive - Florida Gulf Coast University/CLionProjects/HelloWorld/moviePlayer.cpp">
+			<Option target="HelloWorld"/>
+		</Unit>
+		<Unit filename="/Users/brandonbaker/OneDrive - Florida Gulf Coast University/CLionProjects/HelloWorld/moviePlayer.h">
+			<Option target="HelloWorld"/>
+		</Unit>
 		<Unit filename="/Users/brandonbaker/OneDrive - Florida Gulf Coast University/CLionProjects/HelloWorld/musicPlayer.cpp">
 			<Option target="HelloWorld"/>
 		</Unit>

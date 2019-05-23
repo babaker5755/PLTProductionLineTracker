@@ -6,19 +6,29 @@
 
 #IncludeRegexTransform: 
 
+/Users/brandonbaker/OneDrive - Florida Gulf Coast University/CLionProjects/HelloWorld/main.cpp
+iostream
+-
+fstream
+-
+sstream
+-
+string
+-
+main.h
 /Users/brandonbaker/OneDrive - Florida Gulf Coast University/CLionProjects/HelloWorld/main.h
 
-/Users/brandonbaker/OneDrive - Florida Gulf Coast University/CLionProjects/HelloWorld/musicPlayer.cpp
+/Users/brandonbaker/OneDrive - Florida Gulf Coast University/CLionProjects/HelloWorld/main.h
+
+/Users/brandonbaker/OneDrive - Florida Gulf Coast University/CLionProjects/HelloWorld/moviePlayer.cpp
 main.h
 /Users/brandonbaker/OneDrive - Florida Gulf Coast University/CLionProjects/HelloWorld/main.h
 musicPlayer.h
 /Users/brandonbaker/OneDrive - Florida Gulf Coast University/CLionProjects/HelloWorld/musicPlayer.h
-fstream
--
-iostream
--
-iomanip
--
+moviePlayer.h
+/Users/brandonbaker/OneDrive - Florida Gulf Coast University/CLionProjects/HelloWorld/moviePlayer.h
+
+/Users/brandonbaker/OneDrive - Florida Gulf Coast University/CLionProjects/HelloWorld/moviePlayer.h
 
 /Users/brandonbaker/OneDrive - Florida Gulf Coast University/CLionProjects/HelloWorld/musicPlayer.h
 iostream

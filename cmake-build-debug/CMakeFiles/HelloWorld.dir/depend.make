@@ -4,6 +4,11 @@
 CMakeFiles/HelloWorld.dir/main.cpp.o: ../main.cpp
 CMakeFiles/HelloWorld.dir/main.cpp.o: ../main.h
 
+CMakeFiles/HelloWorld.dir/moviePlayer.cpp.o: ../main.h
+CMakeFiles/HelloWorld.dir/moviePlayer.cpp.o: ../moviePlayer.cpp
+CMakeFiles/HelloWorld.dir/moviePlayer.cpp.o: ../moviePlayer.h
+CMakeFiles/HelloWorld.dir/moviePlayer.cpp.o: ../musicPlayer.h
+
 CMakeFiles/HelloWorld.dir/musicPlayer.cpp.o: ../main.h
 CMakeFiles/HelloWorld.dir/musicPlayer.cpp.o: ../musicPlayer.cpp
 CMakeFiles/HelloWorld.dir/musicPlayer.cpp.o: ../musicPlayer.h

@@ -150,6 +150,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/HelloWorld.dir/build.make CMakeFiles/HelloWorld.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+moviePlayer.o: moviePlayer.cpp.o
+
+.PHONY : moviePlayer.o
+
+# target to build an object file
+moviePlayer.cpp.o:
+	$(MAKE) -f CMakeFiles/HelloWorld.dir/build.make CMakeFiles/HelloWorld.dir/moviePlayer.cpp.o
+.PHONY : moviePlayer.cpp.o
+
+moviePlayer.i: moviePlayer.cpp.i
+
+.PHONY : moviePlayer.i
+
+# target to preprocess a source file
+moviePlayer.cpp.i:
+	$(MAKE) -f CMakeFiles/HelloWorld.dir/build.make CMakeFiles/HelloWorld.dir/moviePlayer.cpp.i
+.PHONY : moviePlayer.cpp.i
+
+moviePlayer.s: moviePlayer.cpp.s
+
+.PHONY : moviePlayer.s
+
+# target to generate assembly for a file
+moviePlayer.cpp.s:
+	$(MAKE) -f CMakeFiles/HelloWorld.dir/build.make CMakeFiles/HelloWorld.dir/moviePlayer.cpp.s
+.PHONY : moviePlayer.cpp.s
+
 musicPlayer.o: musicPlayer.cpp.o
 
 .PHONY : musicPlayer.o
@@ -216,6 +243,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... moviePlayer.o"
+	@echo "... moviePlayer.i"
+	@echo "... moviePlayer.s"
 	@echo "... musicPlayer.o"
 	@echo "... musicPlayer.i"
 	@echo "... musicPlayer.s"

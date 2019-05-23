@@ -5,6 +5,7 @@
 
 #include "main.h"
 
+
 using namespace std;
 
 int mmCount;
@@ -192,10 +193,6 @@ void addEmployeeAccount() {
     showMenu();
 };
 
-void addMoviePlayer() {
-    cout << "3" << endl;
-    showMenu();
-};
 
 void displayProductionStatistics() {
     cout << "4" << endl;
