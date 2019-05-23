@@ -1,7 +1,7 @@
 # HelloWorld
 COP 2001 Project
 
-Project Shows Menu in Console
+Project shows menu in console <br>
 User can track production by adding employee accounts, <br>
 tracking production by adding products, and displaying production statistics.
 
