@@ -12,6 +12,12 @@
 
 using namespace std;
 
+/**
+ * Asks and gets manufacturer from user input.
+ * Asks and gets name from user input.
+ * Asks and gets item type from user input.
+ * Prints record to production.txt file.
+ * */
 void addMusicPlayer() {
     string manufacturer = getManufacturer();
     string name = getName();
@@ -20,6 +26,10 @@ void addMusicPlayer() {
     showMenu();
 }
 
+/**
+ * Asks and gets manufacturer from user input.
+ * @return Full manufacturer name.
+ */
 string getManufacturer() {
     string manufacturer;
     do {
@@ -33,7 +43,10 @@ string getManufacturer() {
 
     return manufacturer;
 }
-
+/**
+ * Asks and gets product name from user input.
+ * @return Full item name.
+ */
 string getName() {
     string name;
     do {
@@ -46,7 +59,10 @@ string getName() {
     } while (!cin);
     return name;
 }
-
+/**
+ * Presents menu for item type and gets itemNumber from user input.
+ * @return Number representing item type.
+ */
 int getItemType() {
     cout << "1. Audio" << endl;
     cout << "2. Visual" << endl;
@@ -65,9 +81,16 @@ int getItemType() {
     return itemNumber;
 }
 
+/**
+ * Prints the full line to production.txt file.
+ * Opens production.txt to append it.
+ * Switch statement interprets item number as the item type.
+ * @param Manufacturer full manufacturer name.
+ * @param ItemNumber number representing item type.
+ */
 void printRecordToProduction(string manufacturer, int itemNumber) {
     string record;
-    string man = manufacturer.substr(0,2);
+    string man = manufacturer.substr(0, 3);
     int productionCount = getProductionCount();
     int currentItemIndex = getCountFromItemType(itemNumber);
     string itemType;
@@ -84,15 +107,15 @@ void printRecordToProduction(string manufacturer, int itemNumber) {
         case 4 :
             itemType = "VM";
             break;
-        default : break;
+        default :
+            break;
     }
     string recordPrefix = man + itemType;
     ofstream prodFile;
-    prodFile.open("production.txt", fstream::app);
+    prodFile.open("production.txt", fstream::app); // Open to append
     prodFile << "Production Number : " << productionCount << " Serial Number : ";
-    prodFile << recordPrefix << setfill('0') << setw(5) << currentItemIndex << endl;
+    prodFile << recordPrefix << setfill('0') << setw(5) << currentItemIndex << endl; // adds leading zeros if needed
     incrementCountForItemType(itemNumber);
     cout << "Successfully added item to production record" << endl;
     prodFile.close();
-    //cout << setfill('0') << setw(5) << 0;
 }

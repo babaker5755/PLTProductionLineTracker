@@ -14,6 +14,11 @@ int amCount;
 int vmCount;
 int productionCount;
 
+/**
+ * Runs Program, first gets placeholders from placeholder.txt
+ * then displays menu.
+ * @return 0
+ */
 int main() {
 
     getPlaceholdersFromFile();
@@ -22,8 +27,12 @@ int main() {
     showMenu();
 
     return 0;
-};
+}
 
+/**
+ * Shows Menu and runs 2 functions that will return a valid selection
+ * and then run the selected option.
+ */
 void showMenu() {
     cout << endl;
     cout << "1. Add Employee Account" << endl;
@@ -31,10 +40,15 @@ void showMenu() {
     cout << "3. Add Movie Player" << endl;
     cout << "4. Display Production Statistics" << endl;
     cout << "5. Exit" << endl;
-    int response = getMenuSelection();
-    runMenuSelection(response);
-};
+    int selection = getMenuSelection();
+    runMenuSelection(selection);
+}
 
+/**
+ * Will repeat asking for a menu option until user
+ * has entered a valid one.
+ * @return Valid menu selection.
+ */
 int getMenuSelection() {
     int response;
     do {
@@ -47,10 +61,14 @@ int getMenuSelection() {
     } while (response < 1 || response > 5 || !cin);
 
     return response;
-};
+}
 
-void runMenuSelection(int response) {
-    switch (response) {
+/**
+ * Takes selection and runs function of the selected option.
+ * @param selection User selected option.
+ */
+void runMenuSelection(int selection) {
+    switch (selection) {
         case 1 :
             addEmployeeAccount();
             break;
@@ -69,16 +87,13 @@ void runMenuSelection(int response) {
         default :
             break;
     }
-};
+}
 
-void writeToFile() {
-    //write to a file
-    ofstream myFile;
-    myFile.open("catalog.txt");
-    myFile << "Writing this to a file." << endl;
-    myFile.close();
-};
-
+/**
+ * Will overwrite placeholder.txt file with all 1's to reset
+ * item counts and production count.
+ * Will start the file with __*__
+ */
 void writeDefaultPlaceholdersToFile() {
     //write default file placeholders
     ofstream placeholderFile;
@@ -92,7 +107,12 @@ void writeDefaultPlaceholdersToFile() {
     placeholderFile.close();
 }
 
-
+/**
+ * Checks if placeholder.txt file exists, and will create a new one if it doesn't.
+ * Checks if the first line of placeholder.txt file is __*__, will write default values if not.
+ * Reads 5 values from placeholder.txt file and assigns them to 5 global variables.
+ * The 5 global values are the corresponding item count for each item type and the prod. count.
+ */
 void getPlaceholdersFromFile() {
     //read from a file
     string line;
@@ -135,9 +155,14 @@ void getPlaceholdersFromFile() {
             i++;
         }
         placeholderFile.close();
-    };
-};
+    }
+}
 
+/**
+ * Takes a number corresponding to item type, and returns the count for that item.
+ * @param itemNumber number that corresponds to item type.
+ * @return Returns the count for the given item type.
+ */
 int getCountFromItemType(int itemNumber) {
     int typeCount;
     switch (itemNumber) {
@@ -158,16 +183,26 @@ int getCountFromItemType(int itemNumber) {
     }
     return typeCount;
 }
+
+/**
+ * Takes number corresponding to item type, increments the corresponding global variable.
+ * placeholder.txt file is overwritten with new values taken from global variables.
+ * @param itemNumber number that corresponds to item type.
+ */
 void incrementCountForItemType(int itemNumber) {
     //write default file placeholders
     switch (itemNumber) {
-        case 1 : ++mmCount;
+        case 1 :
+            ++mmCount;
             break;
-        case 2 : ++viCount;
+        case 2 :
+            ++viCount;
             break;
-        case 3 : ++amCount;
+        case 3 :
+            ++amCount;
             break;
-        case 4 : ++vmCount;
+        case 4 :
+            ++vmCount;
             break;
     }
     ofstream placeholderFile;
@@ -182,24 +217,33 @@ void incrementCountForItemType(int itemNumber) {
     getPlaceholdersFromFile();
 }
 
+/**
+ * Getter for production count.
+ * @return Production count.
+ */
 int getProductionCount() {
     return productionCount;
 }
 
-
-
+/**
+ * Will eventually run  function to add employee.
+ */
 void addEmployeeAccount() {
     cout << "1" << endl;
     showMenu();
-};
+}
 
-
+/**
+ * Will eventually run function to diplsay prod. statistics.
+ */
 void displayProductionStatistics() {
     cout << "4" << endl;
     showMenu();
-};
+}
 
+/**
+ * Will end program.
+ */
 void exitSelected() {
-    cout << "5" << endl;
-    showMenu();
-};
+    cout << "Have a Nice Day" << endl;
+}
