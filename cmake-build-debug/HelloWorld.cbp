@@ -98,9 +98,6 @@
 		<Unit filename="/Users/brandonbaker/OneDrive - Florida Gulf Coast University/CLionProjects/HelloWorld/musicPlayer.h">
 			<Option target="HelloWorld"/>
 		</Unit>
-		<Unit filename="/Users/brandonbaker/OneDrive - Florida Gulf Coast University/CLionProjects/HelloWorld/product.cpp">
-			<Option target="HelloWorld"/>
-		</Unit>
 		<Unit filename="/Users/brandonbaker/OneDrive - Florida Gulf Coast University/CLionProjects/HelloWorld/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

@@ -43,6 +43,7 @@ string getManufacturer() {
 
     return manufacturer;
 }
+
 /**
  * Asks and gets product name from user input.
  * @return Full item name.
@@ -59,6 +60,7 @@ string getName() {
     } while (!cin);
     return name;
 }
+
 /**
  * Presents menu for item type and gets itemNumber from user input.
  * @return Number representing item type.
