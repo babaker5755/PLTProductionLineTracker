@@ -1,7 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/HelloWorld.dir/main.cpp.o"
-  "CMakeFiles/HelloWorld.dir/musicPlayer.cpp.o"
-  "CMakeFiles/HelloWorld.dir/moviePlayer.cpp.o"
+  "CMakeFiles/HelloWorld.dir/produceItems.cpp.o"
+  "CMakeFiles/HelloWorld.dir/productionItems.cpp.o"
+  "CMakeFiles/HelloWorld.dir/displayProductionStatistics.cpp.o"
   "HelloWorld.pdb"
   "HelloWorld"
 )

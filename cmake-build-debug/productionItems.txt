@@ -1,0 +1,9 @@
+__*__
+Sony,Boombox,MM
+Panasonic,Monitor,VI
+Apple,Ipod Mini,AM
+Apple,Ipod,VM
+Apple,iPhoneXr,VM
+Apple,Iphone8,VM
+Apple,Macbook,VM
+Apple,Ipod touch,VM

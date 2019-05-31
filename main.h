@@ -7,9 +7,9 @@
 
 void addEmployeeAccount();
 
-void addMusicPlayer();
+void produceItems();
 
-void addMoviePlayer();
+void addProductionItem();
 
 void displayProductionStatistics();
 
@@ -20,8 +20,6 @@ void showMenu();
 int getMenuSelection();
 
 void runMenuSelection(int response);
-
-void writeToFile();
 
 void getPlaceholdersFromFile();
 

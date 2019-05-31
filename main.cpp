@@ -5,7 +5,6 @@
 
 #include "main.h"
 
-
 using namespace std;
 
 int mmCount;
@@ -35,10 +34,10 @@ int main() {
  */
 void showMenu() {
     cout << endl;
-    cout << "1. Add Employee Account" << endl;
-    cout << "2. Add Music Player" << endl;
-    cout << "3. Add Movie Player" << endl;
-    cout << "4. Display Production Statistics" << endl;
+    cout << "1. Produce Items" << endl;
+    cout << "2. Add Employee Account" << endl;
+    cout << "3. Add Production Item" << endl;
+    cout << "4. Serial Number Lookup" << endl;
     cout << "5. Exit" << endl;
     int selection = getMenuSelection();
     runMenuSelection(selection);
@@ -70,13 +69,15 @@ int getMenuSelection() {
 void runMenuSelection(int selection) {
     switch (selection) {
         case 1 :
-            addEmployeeAccount();
+            //In "produceItems.cpp"
+            produceItems();
             break;
         case 2 :
-            addMusicPlayer();
+            addEmployeeAccount();
             break;
         case 3 :
-            addMoviePlayer();
+            //In "productionItems.cpp"
+            addProductionItem();
             break;
         case 4 :
             displayProductionStatistics();
@@ -106,6 +107,7 @@ void writeDefaultPlaceholdersToFile() {
     placeholderFile << 1 << endl;
     placeholderFile.close();
 }
+
 
 /**
  * Checks if placeholder.txt file exists, and will create a new one if it doesn't.
@@ -157,6 +159,7 @@ void getPlaceholdersFromFile() {
         placeholderFile.close();
     }
 }
+
 
 /**
  * Takes a number corresponding to item type, and returns the count for that item.
@@ -233,13 +236,6 @@ void addEmployeeAccount() {
     showMenu();
 }
 
-/**
- * Will eventually run function to diplsay prod. statistics.
- */
-void displayProductionStatistics() {
-    cout << "4" << endl;
-    showMenu();
-}
 
 /**
  * Will end program.

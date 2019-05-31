@@ -123,6 +123,33 @@ HelloWorld/fast:
 	$(MAKE) -f CMakeFiles/HelloWorld.dir/build.make CMakeFiles/HelloWorld.dir/build
 .PHONY : HelloWorld/fast
 
+displayProductionStatistics.o: displayProductionStatistics.cpp.o
+
+.PHONY : displayProductionStatistics.o
+
+# target to build an object file
+displayProductionStatistics.cpp.o:
+	$(MAKE) -f CMakeFiles/HelloWorld.dir/build.make CMakeFiles/HelloWorld.dir/displayProductionStatistics.cpp.o
+.PHONY : displayProductionStatistics.cpp.o
+
+displayProductionStatistics.i: displayProductionStatistics.cpp.i
+
+.PHONY : displayProductionStatistics.i
+
+# target to preprocess a source file
+displayProductionStatistics.cpp.i:
+	$(MAKE) -f CMakeFiles/HelloWorld.dir/build.make CMakeFiles/HelloWorld.dir/displayProductionStatistics.cpp.i
+.PHONY : displayProductionStatistics.cpp.i
+
+displayProductionStatistics.s: displayProductionStatistics.cpp.s
+
+.PHONY : displayProductionStatistics.s
+
+# target to generate assembly for a file
+displayProductionStatistics.cpp.s:
+	$(MAKE) -f CMakeFiles/HelloWorld.dir/build.make CMakeFiles/HelloWorld.dir/displayProductionStatistics.cpp.s
+.PHONY : displayProductionStatistics.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -150,59 +177,59 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/HelloWorld.dir/build.make CMakeFiles/HelloWorld.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-moviePlayer.o: moviePlayer.cpp.o
+produceItems.o: produceItems.cpp.o
 
-.PHONY : moviePlayer.o
-
-# target to build an object file
-moviePlayer.cpp.o:
-	$(MAKE) -f CMakeFiles/HelloWorld.dir/build.make CMakeFiles/HelloWorld.dir/moviePlayer.cpp.o
-.PHONY : moviePlayer.cpp.o
-
-moviePlayer.i: moviePlayer.cpp.i
-
-.PHONY : moviePlayer.i
-
-# target to preprocess a source file
-moviePlayer.cpp.i:
-	$(MAKE) -f CMakeFiles/HelloWorld.dir/build.make CMakeFiles/HelloWorld.dir/moviePlayer.cpp.i
-.PHONY : moviePlayer.cpp.i
-
-moviePlayer.s: moviePlayer.cpp.s
-
-.PHONY : moviePlayer.s
-
-# target to generate assembly for a file
-moviePlayer.cpp.s:
-	$(MAKE) -f CMakeFiles/HelloWorld.dir/build.make CMakeFiles/HelloWorld.dir/moviePlayer.cpp.s
-.PHONY : moviePlayer.cpp.s
-
-musicPlayer.o: musicPlayer.cpp.o
-
-.PHONY : musicPlayer.o
+.PHONY : produceItems.o
 
 # target to build an object file
-musicPlayer.cpp.o:
-	$(MAKE) -f CMakeFiles/HelloWorld.dir/build.make CMakeFiles/HelloWorld.dir/musicPlayer.cpp.o
-.PHONY : musicPlayer.cpp.o
+produceItems.cpp.o:
+	$(MAKE) -f CMakeFiles/HelloWorld.dir/build.make CMakeFiles/HelloWorld.dir/produceItems.cpp.o
+.PHONY : produceItems.cpp.o
 
-musicPlayer.i: musicPlayer.cpp.i
+produceItems.i: produceItems.cpp.i
 
-.PHONY : musicPlayer.i
+.PHONY : produceItems.i
 
 # target to preprocess a source file
-musicPlayer.cpp.i:
-	$(MAKE) -f CMakeFiles/HelloWorld.dir/build.make CMakeFiles/HelloWorld.dir/musicPlayer.cpp.i
-.PHONY : musicPlayer.cpp.i
+produceItems.cpp.i:
+	$(MAKE) -f CMakeFiles/HelloWorld.dir/build.make CMakeFiles/HelloWorld.dir/produceItems.cpp.i
+.PHONY : produceItems.cpp.i
 
-musicPlayer.s: musicPlayer.cpp.s
+produceItems.s: produceItems.cpp.s
 
-.PHONY : musicPlayer.s
+.PHONY : produceItems.s
 
 # target to generate assembly for a file
-musicPlayer.cpp.s:
-	$(MAKE) -f CMakeFiles/HelloWorld.dir/build.make CMakeFiles/HelloWorld.dir/musicPlayer.cpp.s
-.PHONY : musicPlayer.cpp.s
+produceItems.cpp.s:
+	$(MAKE) -f CMakeFiles/HelloWorld.dir/build.make CMakeFiles/HelloWorld.dir/produceItems.cpp.s
+.PHONY : produceItems.cpp.s
+
+productionItems.o: productionItems.cpp.o
+
+.PHONY : productionItems.o
+
+# target to build an object file
+productionItems.cpp.o:
+	$(MAKE) -f CMakeFiles/HelloWorld.dir/build.make CMakeFiles/HelloWorld.dir/productionItems.cpp.o
+.PHONY : productionItems.cpp.o
+
+productionItems.i: productionItems.cpp.i
+
+.PHONY : productionItems.i
+
+# target to preprocess a source file
+productionItems.cpp.i:
+	$(MAKE) -f CMakeFiles/HelloWorld.dir/build.make CMakeFiles/HelloWorld.dir/productionItems.cpp.i
+.PHONY : productionItems.cpp.i
+
+productionItems.s: productionItems.cpp.s
+
+.PHONY : productionItems.s
+
+# target to generate assembly for a file
+productionItems.cpp.s:
+	$(MAKE) -f CMakeFiles/HelloWorld.dir/build.make CMakeFiles/HelloWorld.dir/productionItems.cpp.s
+.PHONY : productionItems.cpp.s
 
 # Help Target
 help:
@@ -213,15 +240,18 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... HelloWorld"
+	@echo "... displayProductionStatistics.o"
+	@echo "... displayProductionStatistics.i"
+	@echo "... displayProductionStatistics.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... moviePlayer.o"
-	@echo "... moviePlayer.i"
-	@echo "... moviePlayer.s"
-	@echo "... musicPlayer.o"
-	@echo "... musicPlayer.i"
-	@echo "... musicPlayer.s"
+	@echo "... produceItems.o"
+	@echo "... produceItems.i"
+	@echo "... produceItems.s"
+	@echo "... productionItems.o"
+	@echo "... productionItems.i"
+	@echo "... productionItems.s"
 .PHONY : help
 
 

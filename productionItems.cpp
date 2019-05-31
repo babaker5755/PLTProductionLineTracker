@@ -1,28 +1,31 @@
 //
-// Created by Brandon Baker on 2019-05-22.
+// Created by Brandon Baker on 2019-05-29.
 //
 
-
-#include "main.h"
-#include "musicPlayer.h"
-
-#include <fstream>
+#include "productionItems.h"
 #include <iostream>
-#include <iomanip>
+#include "main.h"
+#include <fstream>
+#include <string>
+#include <vector>
 
 using namespace std;
 
 /**
- * Asks and gets manufacturer from user input.
- * Asks and gets name from user input.
- * Asks and gets item type from user input.
- * Prints record to production.txt file.
- * */
-void addMusicPlayer() {
+ * Builds production item info from user input.
+ * Adds new production item to productionItems.txt file
+ * Shows main menu when done
+ */
+void addProductionItem() {
+
     string manufacturer = getManufacturer();
+
     string name = getName();
-    int itemType = getItemType();
-    printRecordToProduction(manufacturer, itemType);
+
+    int itemNumber = getItemType();
+
+    writeNewItemToFile(manufacturer, name, itemNumber);
+
     showMenu();
 }
 
@@ -33,12 +36,14 @@ void addMusicPlayer() {
 string getManufacturer() {
     string manufacturer;
     do {
-        cout << "Please enter the manufacturer name : " << " ";
+        cin.clear();
+        cin.ignore(100, '\n');
+        cout << "Please enter the manufacturer name : " << flush;
         if (!cin) {
             cin.clear();    // Restore input stream to working state
             cin.ignore(100, '\n'); // ignores extra input
         }
-        cin >> manufacturer;
+        getline(cin, manufacturer);
     } while (!cin || manufacturer.length() < 3);
 
     return manufacturer;
@@ -56,7 +61,7 @@ string getName() {
             cin.clear();    // Restore input stream to working state
             cin.ignore(100, '\n'); // ignores extra input
         }
-        cin >> name;
+        getline(cin, name);
     } while (!cin);
     return name;
 }
@@ -84,17 +89,13 @@ int getItemType() {
 }
 
 /**
- * Prints the full line to production.txt file.
- * Opens production.txt to append it.
- * Switch statement interprets item number as the item type.
- * @param Manufacturer full manufacturer name.
- * @param ItemNumber number representing item type.
+ * Takes item information as parameters, writes the info to the
+ * "productionItems.txt "file. Data is seperated by commas.
+ * @param manufacturer Manufacturer of the product
+ * @param name Name of the product
+ * @param itemNumber Number that represents item type, 1-4
  */
-void printRecordToProduction(string manufacturer, int itemNumber) {
-    string record;
-    string man = manufacturer.substr(0, 3);
-    int productionCount = getProductionCount();
-    int currentItemIndex = getCountFromItemType(itemNumber);
+void writeNewItemToFile(string manufacturer, string name, int itemNumber) {
     string itemType;
     switch (itemNumber) {
         case 1 :
@@ -112,12 +113,9 @@ void printRecordToProduction(string manufacturer, int itemNumber) {
         default :
             break;
     }
-    string recordPrefix = man + itemType;
-    ofstream prodFile;
-    prodFile.open("production.txt", fstream::app); // Open to append
-    prodFile << "Production Number : " << productionCount << " Serial Number : ";
-    prodFile << recordPrefix << setfill('0') << setw(5) << currentItemIndex << endl; // adds leading zeros if needed
-    incrementCountForItemType(itemNumber);
-    cout << "Successfully added item to production record" << endl;
-    prodFile.close();
+    ofstream prodItemsFile;
+    prodItemsFile.open("productionItems.txt", fstream::app); // Open to append
+    prodItemsFile << manufacturer << "," << name << "," << itemType << endl;
+    cout << "Successfully added item to catalog!" << endl;
 }
+
