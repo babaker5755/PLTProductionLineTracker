@@ -130,7 +130,7 @@ bool passwordMeetsRequirements(string password) {
         if (islower(password[i])) { hasLower = true; }
         if (ispunct(password[i])) { hasPunct = true; }
         if (isspace(password[i])) { hasSpace = true; }
-        if (isnumber(password[i])) { hasNum = true; }
+        if (isdigit(password[i])) { hasNum = true; }
     }
     if (hasNum && hasUpper && hasLower && !hasPunct && !hasSpace && password.length() > 0) {
         return true;
