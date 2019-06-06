@@ -20,6 +20,7 @@ int productionCount;
  */
 int main() {
 
+
     getPlaceholdersFromFile();
 
     cout << "Welcome to PLT" << endl;
@@ -226,14 +227,6 @@ void incrementCountForItemType(int itemNumber) {
  */
 int getProductionCount() {
     return productionCount;
-}
-
-/**
- * Will eventually run  function to add employee.
- */
-void addEmployeeAccount() {
-    cout << "1" << endl;
-    showMenu();
 }
 
 

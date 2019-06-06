@@ -150,6 +150,33 @@ displayProductionStatistics.cpp.s:
 	$(MAKE) -f CMakeFiles/HelloWorld.dir/build.make CMakeFiles/HelloWorld.dir/displayProductionStatistics.cpp.s
 .PHONY : displayProductionStatistics.cpp.s
 
+employeeAccounts.o: employeeAccounts.cpp.o
+
+.PHONY : employeeAccounts.o
+
+# target to build an object file
+employeeAccounts.cpp.o:
+	$(MAKE) -f CMakeFiles/HelloWorld.dir/build.make CMakeFiles/HelloWorld.dir/employeeAccounts.cpp.o
+.PHONY : employeeAccounts.cpp.o
+
+employeeAccounts.i: employeeAccounts.cpp.i
+
+.PHONY : employeeAccounts.i
+
+# target to preprocess a source file
+employeeAccounts.cpp.i:
+	$(MAKE) -f CMakeFiles/HelloWorld.dir/build.make CMakeFiles/HelloWorld.dir/employeeAccounts.cpp.i
+.PHONY : employeeAccounts.cpp.i
+
+employeeAccounts.s: employeeAccounts.cpp.s
+
+.PHONY : employeeAccounts.s
+
+# target to generate assembly for a file
+employeeAccounts.cpp.s:
+	$(MAKE) -f CMakeFiles/HelloWorld.dir/build.make CMakeFiles/HelloWorld.dir/employeeAccounts.cpp.s
+.PHONY : employeeAccounts.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -243,6 +270,9 @@ help:
 	@echo "... displayProductionStatistics.o"
 	@echo "... displayProductionStatistics.i"
 	@echo "... displayProductionStatistics.s"
+	@echo "... employeeAccounts.o"
+	@echo "... employeeAccounts.i"
+	@echo "... employeeAccounts.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

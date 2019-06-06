@@ -3,6 +3,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/HelloWorld.dir/produceItems.cpp.o"
   "CMakeFiles/HelloWorld.dir/productionItems.cpp.o"
   "CMakeFiles/HelloWorld.dir/displayProductionStatistics.cpp.o"
+  "CMakeFiles/HelloWorld.dir/employeeAccounts.cpp.o"
   "HelloWorld.pdb"
   "HelloWorld"
 )
