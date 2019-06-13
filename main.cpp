@@ -18,8 +18,8 @@ int productionCount;
  * then displays menu.
  * @return 0
  */
-int main() {
 
+int main() {
 
     getPlaceholdersFromFile();
 

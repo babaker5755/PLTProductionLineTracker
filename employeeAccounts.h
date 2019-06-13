@@ -12,13 +12,18 @@
 
 using namespace std;
 
+struct User {
+    string username;
+    string password;
+};
+
 string getUsername();
 
 string getPassword();
 
 string encryptPassword(string password, string encryptedPassword);
 
-void writeAccountToFile(string username, string password);
+void writeAccountToFile(User user);
 
 bool passwordMeetsRequirements(string password);
 

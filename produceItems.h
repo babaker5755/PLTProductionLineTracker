@@ -6,6 +6,14 @@
 #define HELLOWORLD_PRODUCEITEMS_H
 
 #include <iostream>
+#include <string>
+#include <vector>
+
+struct Product {
+    std::string manufacturer;
+    std::string itemType;
+    int itemNumber;
+};
 
 using namespace std;
 

@@ -9,12 +9,18 @@
 #include <string>
 #include <vector>
 
+struct Product {
+    std::string manufacturer;
+    std::string name;
+    int itemNumber;
+};
+
 std::string getManufacturer();
 
 std::string getName();
 
 int getItemType();
 
-void writeNewItemToFile(std::string manufacturer, std::string name, int itemNumber);
+void writeNewItemToFile(Product product);
 
 #endif //HELLOWORLD_PRODUCTIONITEMS_H

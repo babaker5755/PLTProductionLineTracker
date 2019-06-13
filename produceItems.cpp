@@ -12,6 +12,7 @@
 #include <string>
 #include <vector>
 #include <sstream>
+#include <algorithm>
 
 using namespace std;
 
@@ -21,6 +22,7 @@ using namespace std;
  * Prints record to production.txt file.
  * */
 void produceItems() {
+
     int productionItemNumber = productionItemSelection();
 
     int numberOfItems = getNumberOfItemsProduced();
@@ -84,38 +86,39 @@ int getNumberOfItemsProduced() {
  * @param numberOfItems number of items produced
  */
 void writeItemsToProduction(int productionItemNumber, int numberOfItems) {
+    //Gets production catalog from file
     vector<string> productionItems = getProductionItemsFromFile();
     string productionItem = productionItems[productionItemNumber];
 
     stringstream prodItem(productionItem);
     vector<string> commaSeparatedProdItem;
-
+    //Fills a vector with 3 items - the selected production item
     while (prodItem.good()) {
         string str;
         getline(prodItem, str, ',');
         commaSeparatedProdItem.push_back(str);
     }
-    string manufacturer = commaSeparatedProdItem[0];
-    string man = manufacturer.substr(0, 3);
+    Product product;
+    product.manufacturer = commaSeparatedProdItem[0];
+    product.manufacturer = product.manufacturer.substr(0, 3);
+    product.itemType = commaSeparatedProdItem[2];
 
-    string itemType = commaSeparatedProdItem[2];
-    int itemNumber;
-    if (itemType == "MM") itemNumber = 1;
-    if (itemType == "AM") itemNumber = 2;
-    if (itemType == "VI") itemNumber = 3;
-    if (itemType == "VM") itemNumber = 4;
+    if (product.itemType == "MM") product.itemNumber = 1;
+    if (product.itemType == "AM") product.itemNumber = 2;
+    if (product.itemType == "VI") product.itemNumber = 3;
+    if (product.itemType == "VM") product.itemNumber = 4;
 
     int productionCount = getProductionCount();
-    int currentItemIndex = getCountFromItemType(itemNumber);
+    int currentItemIndex = getCountFromItemType(product.itemNumber);
 
-    string recordPrefix = man + itemType;
+    string recordPrefix = product.manufacturer + product.itemType;
     ofstream prodFile;
-    prodFile.open("production.txt", fstream::app); // Open to append
+    prodFile.open("ProductionLog.csv", fstream::app); // Open to append
 
     for (int i = 0; i < numberOfItems; i++) {
         prodFile << "Production Number : " << productionCount << " Serial Number : ";
         prodFile << recordPrefix << setfill('0') << setw(5) << currentItemIndex << endl; // adds leading zeros if needed
-        incrementCountForItemType(itemNumber);
+        incrementCountForItemType(product.itemNumber);
         productionCount++;
         currentItemIndex++;
     }
@@ -125,12 +128,12 @@ void writeItemsToProduction(int productionItemNumber, int numberOfItems) {
 
 
 /**
- * Will overwrite productionItems.txt file with
+ * Will overwrite ProductLine.csv file with
  * 4 Basic production items. Used to create the file
  */
 void writeDefaultProductionItems() {
     ofstream productionItemsFile;
-    productionItemsFile.open("productionItems.txt");
+    productionItemsFile.open("ProductLine.csv");
     productionItemsFile << "__*__" << endl;
     productionItemsFile << "Sony,Boombox,MM" << endl;
     productionItemsFile << "Panasonic,Monitor,VI" << endl;
@@ -140,7 +143,7 @@ void writeDefaultProductionItems() {
 }
 
 /**
- * Reads "productionItems.txt file and
+ * Reads "ProductLine.csv" file and
  * returns an array of production items
  * in the form of a string. Manufacturer,name,type
  * @return returns production items as a vector of strings
@@ -148,7 +151,7 @@ void writeDefaultProductionItems() {
 vector<string> getProductionItemsFromFile() {
     string line;
     vector<string> productionItems;
-    ifstream productionItemsFile("productionItems.txt");
+    ifstream productionItemsFile("ProductLine.csv");
     if (!productionItemsFile.is_open()) {
         writeDefaultProductionItems();
     }

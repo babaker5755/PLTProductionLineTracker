@@ -6,6 +6,7 @@
 #define HELLOWORLD_DISPLAYPRODUCTIONSTATISTICS_H
 
 #include <iostream>
+#include <vector>
 
 using namespace std;
 

@@ -12,6 +12,7 @@
 
 using namespace std;
 
+
 /**
  * Takes user input for first and last name,
  * generates a username based off of the input
@@ -19,11 +20,11 @@ using namespace std;
  * Encrypts the password
  */
 void addEmployeeAccount() {
-    string username = getUsername();
-    cout << "Your username  is : " << username << endl;
-    string encryptedPassword = getPassword();
-    writeAccountToFile(username, encryptedPassword);
-
+    User user;
+    user.username = getUsername();
+    cout << "Your username  is : " << user.username << endl;
+    user.password = getPassword();
+    writeAccountToFile(user);
     showMenu();
 }
 
@@ -31,13 +32,12 @@ void addEmployeeAccount() {
  * Asks and gets first and last name from user.
  * @return Full item name.
  */
-
 string getUsername() {
     string name;
     do {
         cin.clear();
         cin.ignore(100, '\n');
-        cout << "Please your first and last name seperated by a space: " << " ";
+        cout << "Please your first and last name separated by a space: " << " ";
         if (!cin) {
             cin.clear();    // Restore input stream to working state
             cin.ignore(100, '\n'); // ignores extra input
@@ -53,10 +53,17 @@ string getUsername() {
         separatedNameVector.push_back(str);
     }
     string firstName = separatedNameVector[0];
-    char firstInitial = firstName[0];
-    string lastName = separatedNameVector[1];
-    string username = firstInitial + lastName;
+    char firstInitial = tolower(firstName[0]);
 
+    string lastName = separatedNameVector[1];
+    // Change all characters in lastName to lower case
+    char nextChar;
+    for (int i = 0; i < lastName.length(); i++) {
+        nextChar = lastName[i];
+        nextChar = tolower(nextChar);
+        lastName[i] = nextChar;
+    }
+    string username = firstInitial + lastName;
     return username;
 }
 
@@ -76,7 +83,7 @@ string getPassword() {
             cin.ignore(100, '\n'); // ignores extra input
         }
         getline(cin, password);
-    } while (!cin && passwordMeetsRequirements(password));
+    } while (!cin || !passwordMeetsRequirements(password));
 
     password = encryptPassword(password, "");
 
@@ -88,10 +95,10 @@ string getPassword() {
  * @param username username from user input
  * @param password encrypted password
  */
-void writeAccountToFile(string username, string password) {
+void writeAccountToFile(User user) {
     ofstream employeeFile;
-    employeeFile.open("employeeAccounts.txt", fstream::app); // Open to append
-    employeeFile << username << "," << password << endl;
+    employeeFile.open("Users.txt", fstream::app); // Open to append
+    employeeFile << user.username << "," << user.password << endl;
     cout << "Successfully added employee account." << endl;
 }
 
@@ -125,6 +132,7 @@ bool passwordMeetsRequirements(string password) {
     bool hasPunct = false;
     bool hasSpace = false;
     bool hasNum = false;
+
     for (int i = 0; i < password.length(); i++) {
         if (isupper(password[i])) { hasUpper = true; }
         if (islower(password[i])) { hasLower = true; }
@@ -132,6 +140,7 @@ bool passwordMeetsRequirements(string password) {
         if (isspace(password[i])) { hasSpace = true; }
         if (isdigit(password[i])) { hasNum = true; }
     }
+
     if (hasNum && hasUpper && hasLower && !hasPunct && !hasSpace && password.length() > 0) {
         return true;
     } else {

@@ -5,6 +5,8 @@
 #ifndef HELLOWORLD_MAIN_H
 #define HELLOWORLD_MAIN_H
 
+#include <vector>
+
 void addEmployeeAccount();
 
 void produceItems();

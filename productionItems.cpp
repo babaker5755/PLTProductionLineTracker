@@ -13,18 +13,19 @@ using namespace std;
 
 /**
  * Builds production item info from user input.
- * Adds new production item to productionItems.txt file
+ * Adds new production item to ProductLine.csv file
  * Shows main menu when done
  */
 void addProductionItem() {
+    Product product;
 
-    string manufacturer = getManufacturer();
+    product.manufacturer = getManufacturer();
 
-    string name = getName();
+    product.name = getName();
 
-    int itemNumber = getItemType();
+    product.itemNumber = getItemType();
 
-    writeNewItemToFile(manufacturer, name, itemNumber);
+    writeNewItemToFile(product);
 
     showMenu();
 }
@@ -90,14 +91,14 @@ int getItemType() {
 
 /**
  * Takes item information as parameters, writes the info to the
- * "productionItems.txt "file. Data is seperated by commas.
+ * "ProductLine.csv" file. Data is seperated by commas.
  * @param manufacturer Manufacturer of the product
  * @param name Name of the product
  * @param itemNumber Number that represents item type, 1-4
  */
-void writeNewItemToFile(string manufacturer, string name, int itemNumber) {
+void writeNewItemToFile(Product product) {
     string itemType;
-    switch (itemNumber) {
+    switch (product.itemNumber) {
         case 1 :
             itemType = "MM";
             break;
@@ -114,8 +115,8 @@ void writeNewItemToFile(string manufacturer, string name, int itemNumber) {
             break;
     }
     ofstream prodItemsFile;
-    prodItemsFile.open("productionItems.txt", fstream::app); // Open to append
-    prodItemsFile << manufacturer << "," << name << "," << itemType << endl;
+    prodItemsFile.open("ProductLine.csv", fstream::app); // Open to append
+    prodItemsFile << product.manufacturer << "," << product.name << "," << itemType << endl;
     cout << "Successfully added item to catalog!" << endl;
 }
 

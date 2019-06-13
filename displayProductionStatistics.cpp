@@ -26,7 +26,7 @@ void displayProductionStatistics() {
 
 /**
  * Asks user for serial number, looks for the serial number
- * anywhere in the "production.txt" file. If the serial
+ * anywhere in the "ProductionLog.csv" file. If the serial
  * number is found, the function returns the production number
  * by locating it between the 20th index and the first index of
  * the string " Serial Number : "
@@ -38,7 +38,7 @@ void serialNumberLookup() {
 
     cout << "Please Enter a serial number to lookup : ";
     cin >> serialNumber;
-    ifstream productionFile("production.txt");
+    ifstream productionFile("ProductionLog.csv");
     while (getline(productionFile, line)) {
         if (line.find(serialNumber) != std::string::npos) {
             foundLine = line;
