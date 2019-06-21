@@ -9,6 +9,8 @@
 /Users/brandonbaker/OneDrive - Florida Gulf Coast University/CLionProjects/HelloWorld/displayProductionStatistics.cpp
 main.h
 /Users/brandonbaker/OneDrive - Florida Gulf Coast University/CLionProjects/HelloWorld/main.h
+productionItems.h
+/Users/brandonbaker/OneDrive - Florida Gulf Coast University/CLionProjects/HelloWorld/productionItems.h
 displayProductionStatistics.h
 /Users/brandonbaker/OneDrive - Florida Gulf Coast University/CLionProjects/HelloWorld/displayProductionStatistics.h
 fstream
@@ -30,87 +32,7 @@ iostream
 vector
 -
 
-/Users/brandonbaker/OneDrive - Florida Gulf Coast University/CLionProjects/HelloWorld/employeeAccounts.cpp
-employeeAccounts.h
-/Users/brandonbaker/OneDrive - Florida Gulf Coast University/CLionProjects/HelloWorld/employeeAccounts.h
-iostream
--
-main.h
 /Users/brandonbaker/OneDrive - Florida Gulf Coast University/CLionProjects/HelloWorld/main.h
-fstream
--
-string
--
-vector
--
-sstream
--
-
-/Users/brandonbaker/OneDrive - Florida Gulf Coast University/CLionProjects/HelloWorld/employeeAccounts.h
-iostream
--
-fstream
--
-string
--
-vector
--
-
-/Users/brandonbaker/OneDrive - Florida Gulf Coast University/CLionProjects/HelloWorld/main.cpp
-iostream
--
-fstream
--
-sstream
--
-string
--
-main.h
-/Users/brandonbaker/OneDrive - Florida Gulf Coast University/CLionProjects/HelloWorld/main.h
-
-/Users/brandonbaker/OneDrive - Florida Gulf Coast University/CLionProjects/HelloWorld/main.h
-vector
--
-
-/Users/brandonbaker/OneDrive - Florida Gulf Coast University/CLionProjects/HelloWorld/produceItems.cpp
-main.h
-/Users/brandonbaker/OneDrive - Florida Gulf Coast University/CLionProjects/HelloWorld/main.h
-produceItems.h
-/Users/brandonbaker/OneDrive - Florida Gulf Coast University/CLionProjects/HelloWorld/produceItems.h
-fstream
--
-iostream
--
-iomanip
--
-string
--
-vector
--
-sstream
--
-algorithm
--
-
-/Users/brandonbaker/OneDrive - Florida Gulf Coast University/CLionProjects/HelloWorld/produceItems.h
-iostream
--
-string
--
-vector
--
-
-/Users/brandonbaker/OneDrive - Florida Gulf Coast University/CLionProjects/HelloWorld/productionItems.cpp
-productionItems.h
-/Users/brandonbaker/OneDrive - Florida Gulf Coast University/CLionProjects/HelloWorld/productionItems.h
-iostream
--
-main.h
-/Users/brandonbaker/OneDrive - Florida Gulf Coast University/CLionProjects/HelloWorld/main.h
-fstream
--
-string
--
 vector
 -
 

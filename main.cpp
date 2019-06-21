@@ -18,7 +18,6 @@ int productionCount;
  * then displays menu.
  * @return 0
  */
-
 int main() {
 
     getPlaceholdersFromFile();
@@ -30,15 +29,15 @@ int main() {
 }
 
 /**
- * Shows Menu and runs 2 functions that will return a valid selection
- * and then run the selected option.
+ * Shows Menu and runs 2 functions that will get a valid selection
+ * and then run the selection.
  */
 void showMenu() {
     cout << endl;
     cout << "1. Produce Items" << endl;
     cout << "2. Add Employee Account" << endl;
     cout << "3. Add Production Item" << endl;
-    cout << "4. Serial Number Lookup" << endl;
+    cout << "4. Display Production Statistics" << endl;
     cout << "5. Exit" << endl;
     int selection = getMenuSelection();
     runMenuSelection(selection);
@@ -74,6 +73,7 @@ void runMenuSelection(int selection) {
             produceItems();
             break;
         case 2 :
+            //In "employeeAccounts.cpp"
             addEmployeeAccount();
             break;
         case 3 :
@@ -81,6 +81,7 @@ void runMenuSelection(int selection) {
             addProductionItem();
             break;
         case 4 :
+            //In "displayProductionStatistics.cpp"
             displayProductionStatistics();
             break;
         case 5 :

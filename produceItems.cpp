@@ -75,7 +75,6 @@ int getNumberOfItemsProduced() {
         cin >> numberOfItems;
     } while (!cin || numberOfItems > 1000 || numberOfItems < 0);
     return numberOfItems;
-
 }
 
 /**
@@ -162,9 +161,11 @@ vector<string> getProductionItemsFromFile() {
             if (i == 0 && line != firstline) {
                 writeDefaultProductionItems();
             }
+
             productionItems.push_back(line);
             i++;
         }
+
         productionItems.erase(productionItems.begin());
         sort(productionItems.begin(), productionItems.end());
         productionItemsFile.close();

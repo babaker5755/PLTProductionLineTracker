@@ -4,6 +4,7 @@
 CMakeFiles/HelloWorld.dir/displayProductionStatistics.cpp.o: ../displayProductionStatistics.cpp
 CMakeFiles/HelloWorld.dir/displayProductionStatistics.cpp.o: ../displayProductionStatistics.h
 CMakeFiles/HelloWorld.dir/displayProductionStatistics.cpp.o: ../main.h
+CMakeFiles/HelloWorld.dir/displayProductionStatistics.cpp.o: ../productionItems.h
 
 CMakeFiles/HelloWorld.dir/employeeAccounts.cpp.o: ../employeeAccounts.cpp
 CMakeFiles/HelloWorld.dir/employeeAccounts.cpp.o: ../employeeAccounts.h
